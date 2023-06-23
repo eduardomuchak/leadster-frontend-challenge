@@ -14,6 +14,7 @@ module.exports = {
         "primary-blue-400": "#0164C1",
         "primary-blue-500": "#005AAD",
         "light-blue": "#F0F8FF",
+        "gray-bd": "#C8D4DD",
       },
     },
   },
