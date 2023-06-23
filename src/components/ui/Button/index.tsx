@@ -4,7 +4,7 @@ export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   children: string | ReactNode;
 }
 
-export function Button({ children, ...rest }: ButtonProps) {
+function Button({ children, ...rest }: ButtonProps) {
   return (
     <button
       className="group w-fit rounded-full border border-black bg-white text-black transition-colors hover:border-primary-blue-300 disabled:opacity-80 disabled:hover:cursor-not-allowed"
@@ -16,3 +16,5 @@ export function Button({ children, ...rest }: ButtonProps) {
     </button>
   );
 }
+
+export default Button;
