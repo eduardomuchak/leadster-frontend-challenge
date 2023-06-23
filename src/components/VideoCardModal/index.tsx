@@ -1,4 +1,7 @@
+"use client";
 import Image, { StaticImageData } from "next/image";
+import { useState } from "react";
+import ImageHover from "../ImageHover";
 
 interface Asset {
   type: string;
@@ -19,17 +22,28 @@ interface VideoCardModalProps {
 }
 
 function VideoCardModal({ data }: VideoCardModalProps) {
+  const [isHovering, setIsHovering] = useState(false);
+
   return (
-    <div className="flex w-full max-w-[360px] flex-col rounded-2xl bg-white shadow-lg shadow-zinc-200">
-      <Image
-        src={data.thumbnail}
-        alt={`${data.title}-thumbnail`}
-        width={360}
-        height={202}
-        className="rounded-t-2xl"
-      />
+    <div
+      className="group flex w-full max-w-[360px] flex-col rounded-2xl bg-white shadow-lg shadow-zinc-200"
+      onMouseEnter={() => setIsHovering(true)}
+      onMouseLeave={() => setIsHovering(false)}
+    >
+      <div className="relative max-h-[202px] w-full max-w-[360px] rounded-t-2xl">
+        {isHovering ? <ImageHover /> : null}
+        <Image
+          src={data.thumbnail}
+          alt={`${data.title}-thumbnail`}
+          width={360}
+          height={202}
+          className="max-h-[202px] w-full max-w-[360px] rounded-t-2xl object-cover"
+        />
+      </div>
       <div className="px-8 py-6">
-        <span className="text-lg font-bold leading-tight">{data.title}</span>
+        <span className="text-lg font-bold leading-tight transition-all group-hover:text-primary-blue-300">
+          {data.title}
+        </span>
       </div>
     </div>
   );
