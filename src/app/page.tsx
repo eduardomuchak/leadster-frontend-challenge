@@ -1,5 +1,6 @@
 import AboveTheFoldSection from "@/components/AboveTheFoldSection";
 import Header from "@/components/Header";
+import HeroSection from "@/components/HeroSection";
 
 export default function Home() {
   return (
@@ -7,6 +8,7 @@ export default function Home() {
       <Header />
       <main className="flex w-full flex-col justify-center">
         <AboveTheFoldSection />
+        <HeroSection />
       </main>
     </div>
   );
