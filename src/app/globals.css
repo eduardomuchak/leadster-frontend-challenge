@@ -12,3 +12,8 @@
   background-repeat: no-repeat;
   padding-right: 28px;
 }
+
+.custom-select:hover {
+  background-image: url("../assets/icons/CaretDownBlue.svg");
+  background-color: ;
+}
