@@ -1,6 +1,7 @@
 "use client";
 import * as Dialog from "@radix-ui/react-dialog";
 import { X } from "phosphor-react";
+import DownloadAsset from "../DownloadAsset";
 import ModalTrigger from "./ModalTrigger";
 import { VideoCardModalProps } from "./interface";
 
@@ -25,14 +26,19 @@ function VideoCardModal({ data }: VideoCardModalProps) {
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           />
           <div className="w-full p-6">
-            <h1 className="mb-2 border-b-2 border-gray-bd pb-1 text-base font-bold">
+            <h1 className="mb-2 border-b border-gray-bd pb-1 text-base font-bold">
               Descrição
             </h1>
             <p className="mb-4 text-base font-medium">{data.description}</p>
 
-            <h1 className="mb-2 border-b-2 border-gray-bd pb-1 text-base font-bold">
+            <h1 className="mb-4 border-b border-gray-bd pb-1 text-base font-bold">
               Downloads
             </h1>
+            <div className="flex flex-row flex-wrap gap-3">
+              {data.assets.map((asset) => (
+                <DownloadAsset file={asset.name} path={asset.url} />
+              ))}
+            </div>
           </div>
         </Dialog.Content>
       </Dialog.Portal>
