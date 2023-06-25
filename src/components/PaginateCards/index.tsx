@@ -12,7 +12,7 @@ function PaginateCards({
   handleTabChange,
 }: PaginateCardsProps) {
   return (
-    <div className="flex flex-row items-center justify-center gap-4 py-6">
+    <div className="flex flex-row items-center justify-center gap-4 pt-6">
       <span className="font-bold">Página</span>
       <ul className="flex w-full flex-wrap items-center justify-center gap-2">
         {Array.from({ length: pageCount }).map((_, index) => (

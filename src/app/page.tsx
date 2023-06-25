@@ -1,4 +1,5 @@
 import AboveTheFoldSection from "@/components/AboveTheFoldSection";
+import CTASection from "@/components/CTASection";
 import Header from "@/components/Header";
 import HeroSection from "@/components/HeroSection";
 
@@ -9,6 +10,7 @@ export default function Home() {
       <main className="flex w-full flex-col justify-center">
         <AboveTheFoldSection />
         <HeroSection />
+        <CTASection />
       </main>
     </div>
   );
