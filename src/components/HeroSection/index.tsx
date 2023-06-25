@@ -1,11 +1,27 @@
+"use client";
+
 import { cards } from "@/mocks/cards";
 import { options } from "@/mocks/selectOptions";
+import { useState } from "react";
 import CardsContainer from "../CardsContainer";
+import PaginateCards from "../PaginateCards";
 import VideoCardModal from "../VideoCardModal";
 import Button from "../ui/Button";
 import Select from "../ui/Select";
 
 function HeroSection() {
+  const [currentTab, setCurrentTab] = useState(0);
+  const cardsPerPage = 9;
+  const pageCount = Math.ceil(cards.length / cardsPerPage);
+
+  const handleTabChange = (tabIndex: number) => {
+    setCurrentTab(tabIndex);
+  };
+
+  const startIndex = currentTab * cardsPerPage;
+  const endIndex = startIndex + cardsPerPage;
+  const currentCards = cards.slice(startIndex, endIndex);
+
   return (
     <section className="bg-red flex w-full bg-white px-5 py-6 md:py-12 lg:py-[90px]">
       <div className="mx-auto flex w-full max-w-[1200px] flex-col items-center justify-center">
@@ -25,10 +41,16 @@ function HeroSection() {
           </div>
         </div>
         <CardsContainer>
-          {cards.map((card) => (
+          {currentCards.map((card) => (
             <VideoCardModal key={card.id} data={card} />
           ))}
         </CardsContainer>
+
+        <PaginateCards
+          pageCount={pageCount}
+          currentTab={currentTab}
+          handleTabChange={handleTabChange}
+        />
       </div>
     </section>
   );
