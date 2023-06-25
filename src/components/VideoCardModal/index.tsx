@@ -1,4 +1,5 @@
 "use client";
+import { AnimatePresence } from "framer-motion";
 import Image, { StaticImageData } from "next/image";
 import { useState } from "react";
 import ImageHover from "../ImageHover";
@@ -31,7 +32,7 @@ function VideoCardModal({ data }: VideoCardModalProps) {
       onMouseLeave={() => setIsHovering(false)}
     >
       <div className="relative max-h-[202px] w-full max-w-[360px] rounded-t-2xl">
-        {isHovering ? <ImageHover /> : null}
+        <AnimatePresence>{isHovering ? <ImageHover /> : null}</AnimatePresence>
         <Image
           src={data.thumbnail}
           alt={`${data.title}-thumbnail`}
