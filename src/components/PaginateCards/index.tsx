@@ -20,7 +20,7 @@ function PaginateCards({
             key={index}
             onClick={() => handleTabChange(index)}
             className={clsx(
-              "flex h-11 w-11 items-center justify-center rounded-lg transition-all",
+              "flex h-11 w-11 cursor-pointer items-center justify-center rounded-lg transition-all",
               {
                 "border-2 border-primary-blue-300": index === currentTab,
                 "bg-white": index !== currentTab,

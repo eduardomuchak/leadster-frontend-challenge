@@ -10,7 +10,7 @@ function ModalTrigger({ data }: VideoCardModalProps) {
   return (
     <AnimatePresence>
       <motion.div
-        className="group flex w-full max-w-[360px] cursor-pointer flex-col rounded-2xl bg-white shadow-lg shadow-zinc-200"
+        className="group flex h-fit w-full max-w-[360px] cursor-pointer flex-col justify-between rounded-2xl bg-white shadow-lg shadow-zinc-200"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         exit={{ opacity: 0 }}
@@ -27,7 +27,7 @@ function ModalTrigger({ data }: VideoCardModalProps) {
             className="max-h-[202px] w-full max-w-[360px] rounded-t-2xl object-cover"
           />
         </div>
-        <div className="px-8 py-6">
+        <div className="flex h-full flex-1 items-center justify-center px-8 py-6">
           <span className="text-lg font-bold leading-tight transition-all group-hover:text-primary-blue-300">
             {data.title}
           </span>
