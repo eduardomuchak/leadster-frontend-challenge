@@ -35,8 +35,12 @@ function VideoCardModal({ data }: VideoCardModalProps) {
               Downloads
             </h1>
             <div className="flex flex-row flex-wrap gap-3">
-              {data.assets.map((asset) => (
-                <DownloadAsset file={asset.name} path={asset.url} />
+              {data.assets.map((asset, index) => (
+                <DownloadAsset
+                  key={`${index}-${asset.name}`}
+                  file={asset.name}
+                  path={asset.url}
+                />
               ))}
             </div>
           </div>
