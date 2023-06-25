@@ -7,7 +7,7 @@ interface Asset {
 
 interface Card {
   id: number;
-  thumbnail: StaticImageData;
+  thumbnail: StaticImageData | string;
   video: string;
   title: string;
   description: string;
