@@ -1,52 +1,42 @@
 "use client";
-import { AnimatePresence } from "framer-motion";
-import Image, { StaticImageData } from "next/image";
-import { useState } from "react";
-import ImageHover from "../ImageHover";
-
-interface Asset {
-  type: string;
-  url: string;
-}
-
-interface Card {
-  id: number;
-  thumbnail: StaticImageData;
-  video: string;
-  title: string;
-  description: string;
-  assets: Asset[];
-}
-
-interface VideoCardModalProps {
-  data: Card;
-}
+import * as Dialog from "@radix-ui/react-dialog";
+import { X } from "phosphor-react";
+import ModalTrigger from "./ModalTrigger";
+import { VideoCardModalProps } from "./interface";
 
 function VideoCardModal({ data }: VideoCardModalProps) {
-  const [isHovering, setIsHovering] = useState(false);
-
   return (
-    <div
-      className="group flex w-full max-w-[360px] flex-col rounded-2xl bg-white shadow-lg shadow-zinc-200"
-      onMouseEnter={() => setIsHovering(true)}
-      onMouseLeave={() => setIsHovering(false)}
-    >
-      <div className="relative max-h-[202px] w-full max-w-[360px] rounded-t-2xl">
-        <AnimatePresence>{isHovering ? <ImageHover /> : null}</AnimatePresence>
-        <Image
-          src={data.thumbnail}
-          alt={`${data.title}-thumbnail`}
-          width={360}
-          height={202}
-          className="max-h-[202px] w-full max-w-[360px] rounded-t-2xl object-cover"
-        />
-      </div>
-      <div className="px-8 py-6">
-        <span className="text-lg font-bold leading-tight transition-all group-hover:text-primary-blue-300">
-          {data.title}
-        </span>
-      </div>
-    </div>
+    <Dialog.Root>
+      <Dialog.Trigger>
+        <ModalTrigger data={data} />
+      </Dialog.Trigger>
+      <Dialog.Portal>
+        <Dialog.Overlay className="fixed inset-0 bg-black bg-opacity-20 backdrop-blur-md" />
+        <Dialog.Content className="fixed inset-0 m-auto flex h-fit w-full max-w-[600px] flex-col items-center justify-center rounded-xl border-t-[12px] border-primary-blue-300 bg-white shadow-lg">
+          <Dialog.Close className="absolute right-4 top-3">
+            <X size={16} color={"#000"} weight="bold" />
+          </Dialog.Close>
+          <Dialog.Title className="px-4 py-6 text-center text-xl font-bold text-black md:px-20 md:text-2xl">
+            <span className="text-primary-blue-300">Webinar:</span> {data.title}
+          </Dialog.Title>
+          <iframe
+            className="aspect-video w-full"
+            src={data.video}
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          />
+          <div className="w-full p-6">
+            <h1 className="mb-2 border-b-2 border-gray-bd pb-1 text-base font-bold">
+              Descrição
+            </h1>
+            <p className="mb-4 text-base font-medium">{data.description}</p>
+
+            <h1 className="mb-2 border-b-2 border-gray-bd pb-1 text-base font-bold">
+              Downloads
+            </h1>
+          </div>
+        </Dialog.Content>
+      </Dialog.Portal>
+    </Dialog.Root>
   );
 }
 
