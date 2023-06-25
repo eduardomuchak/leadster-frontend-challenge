@@ -15,7 +15,6 @@ function Select({ options }: SelectProps) {
         .map((option, index) => (
           <option
             key={`${index}-${option}`}
-            selected={index === 0}
             value={option.value}
             className="text-start text-base font-medium group-hover:text-black"
           >
