@@ -1,3 +1,58 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #dcdcdc;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #edf2f7;
+  border-radius: 5px;
+}
+
+::selection {
+  background: #0084ff;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  ::-webkit-scrollbar {
+    width: 0px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: #dcdcdc;
+    border-radius: 0px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #edf2f7;
+    border-radius: 0px;
+  }
+}
+
+.custom-select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url("../assets/icons/CaretDown.svg");
+  background-size: 18px;
+  background-position: calc(100% - 12px) center;
+  background-repeat: no-repeat;
+  padding-right: 28px;
+}
+
+.custom-select:hover {
+  background-image: url("../assets/icons/CaretDownBlue.svg");
+}

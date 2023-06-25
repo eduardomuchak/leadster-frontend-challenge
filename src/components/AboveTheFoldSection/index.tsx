@@ -4,7 +4,7 @@ import Image from "next/image";
 function AboveTheFoldSection() {
   return (
     <section className="flex w-full bg-light-blue px-5 py-10 md:py-20 lg:py-40">
-      <div className="mx-auto flex w-full max-w-3xl flex-col items-center justify-center">
+      <div className="mx-auto flex w-full max-w-[1480px] flex-col items-center justify-center">
         <div className="mb-4 rounded-r-full rounded-ss-full border-2 border-primary-blue-300 bg-white px-5 py-2 md:mb-8">
           <span className="text-sm font-semibold text-primary-blue-400 md:text-base">
             WEBINARS EXCLUSIVOS
