@@ -1,7 +1,7 @@
 import { StaticImageData } from "next/image";
 
 interface Asset {
-  type: string;
+  name: string;
   url: string;
 }
 

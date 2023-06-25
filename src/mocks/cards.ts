@@ -8,20 +8,20 @@ export const cards = [
     description: `Neste corte do webinar "O Futuro do Marketing - 3 Tendências que vão Mudar (Quase) Tudo que sabemos sobre Marketing Digital", Fabrício Toledo (CEO da Leadster) apresenta as principais plataformas de Marketing Conversacional do mercado.`,
     assets: [
       {
-        type: "spreadsheet",
-        url: "https://via.placeholder.com/360x290",
+        name: "Spreadsheet.xls",
+        url: "./download/Spreadsheet.xls",
       },
       {
-        type: "document",
-        url: "https://via.placeholder.com/360x290",
+        name: "Document.doc",
+        url: "./download/Document.doc",
       },
       {
-        type: "presentation",
-        url: "https://via.placeholder.com/360x290",
+        name: "Presentation.ppt",
+        url: "./download/Presentation.ppt",
       },
       {
-        type: "folder",
-        url: "https://via.placeholder.com/360x290",
+        name: "Folder.zip",
+        url: "./download/Folder.zip",
       },
     ],
   },
@@ -35,20 +35,20 @@ export const cards = [
     description: `Neste corte do webinar "O Futuro do Marketing - 3 Tendências que vão Mudar (Quase) Tudo que sabemos sobre Marketing Digital", Fabrício Toledo (CEO da Leadster) responde à pergunta "O Marketing Conversacional funciona em todos os segmentos de negócio?"`,
     assets: [
       {
-        type: "spreadsheet",
-        url: "https://via.placeholder.com/360x290",
+        name: "Spreadsheet.xls",
+        url: "./download/Spreadsheet.xls",
       },
       {
-        type: "document",
-        url: "https://via.placeholder.com/360x290",
+        name: "Document.doc",
+        url: "./download/Document.doc",
       },
       {
-        type: "presentation",
-        url: "https://via.placeholder.com/360x290",
+        name: "Presentation.ppt",
+        url: "./download/Presentation.ppt",
       },
       {
-        type: "folder",
-        url: "https://via.placeholder.com/360x290",
+        name: "Folder.zip",
+        url: "./download/Folder.zip",
       },
     ],
   },
@@ -62,20 +62,20 @@ export const cards = [
     description: `Neste corte do webinar "O Futuro do Marketing - 3 Tendências que vão Mudar (Quase) Tudo que sabemos sobre Marketing Digital", Fabrício Toledo (CEO da Leadster) explica a diferença entre Marketing Digital, Marketing Conversacional e Marketing no WhatsApp.`,
     assets: [
       {
-        type: "spreadsheet",
-        url: "https://via.placeholder.com/360x290",
+        name: "Spreadsheet.xls",
+        url: "./download/Spreadsheet.xls",
       },
       {
-        type: "document",
-        url: "https://via.placeholder.com/360x290",
+        name: "Document.doc",
+        url: "./download/Document.doc",
       },
       {
-        type: "presentation",
-        url: "https://via.placeholder.com/360x290",
+        name: "Presentation.ppt",
+        url: "./download/Presentation.ppt",
       },
       {
-        type: "folder",
-        url: "https://via.placeholder.com/360x290",
+        name: "Folder.zip",
+        url: "./download/Folder.zip",
       },
     ],
   },
@@ -89,20 +89,20 @@ export const cards = [
     description: `Neste corte do webinar "O Futuro do Marketing - 3 Tendências que vão Mudar (Quase) Tudo que sabemos sobre Marketing Digital", Fabrício Toledo (CEO da Leadster) explica por que apostar no Marketing Conversacional e apresenta os benefícios para empresas.`,
     assets: [
       {
-        type: "spreadsheet",
-        url: "https://via.placeholder.com/360x290",
+        name: "Spreadsheet.xls",
+        url: "./download/Spreadsheet.xls",
       },
       {
-        type: "document",
-        url: "https://via.placeholder.com/360x290",
+        name: "Document.doc",
+        url: "./download/Document.doc",
       },
       {
-        type: "presentation",
-        url: "https://via.placeholder.com/360x290",
+        name: "Presentation.ppt",
+        url: "./download/Presentation.ppt",
       },
       {
-        type: "folder",
-        url: "https://via.placeholder.com/360x290",
+        name: "Folder.zip",
+        url: "./download/Folder.zip",
       },
     ],
   },
@@ -115,20 +115,20 @@ export const cards = [
     description: `Neste corte do webinar "O Futuro do Marketing - 3 Tendências que vão Mudar (Quase) Tudo que sabemos sobre Marketing Digital", Fabrício Toledo (CEO da Leadster) revela por que o Marketing Conversacional é a grande tendência de 2023.`,
     assets: [
       {
-        type: "spreadsheet",
-        url: "https://via.placeholder.com/360x290",
+        name: "Spreadsheet.xls",
+        url: "./download/Spreadsheet.xls",
       },
       {
-        type: "document",
-        url: "https://via.placeholder.com/360x290",
+        name: "Document.doc",
+        url: "./download/Document.doc",
       },
       {
-        type: "presentation",
-        url: "https://via.placeholder.com/360x290",
+        name: "Presentation.ppt",
+        url: "./download/Presentation.ppt",
       },
       {
-        type: "folder",
-        url: "https://via.placeholder.com/360x290",
+        name: "Folder.zip",
+        url: "./download/Folder.zip",
       },
     ],
   },
@@ -141,20 +141,20 @@ export const cards = [
     description: `Neste corte do webinar "O Futuro do Marketing - 3 Tendências que vão Mudar (Quase) Tudo que sabemos sobre Marketing Digital", John Martin (Consultor de SEO na SEO Martin) fala sobre como usar a inteligência artificial nos negócios.`,
     assets: [
       {
-        type: "spreadsheet",
-        url: "https://via.placeholder.com/360x290",
+        name: "Spreadsheet.xls",
+        url: "./download/Spreadsheet.xls",
       },
       {
-        type: "document",
-        url: "https://via.placeholder.com/360x290",
+        name: "Document.doc",
+        url: "./download/Document.doc",
       },
       {
-        type: "presentation",
-        url: "https://via.placeholder.com/360x290",
+        name: "Presentation.ppt",
+        url: "./download/Presentation.ppt",
       },
       {
-        type: "folder",
-        url: "https://via.placeholder.com/360x290",
+        name: "Folder.zip",
+        url: "./download/Folder.zip",
       },
     ],
   },
@@ -168,20 +168,20 @@ export const cards = [
     description: `Neste corte do webinar "O Futuro do Marketing - 3 Tendências que vão Mudar (Quase) Tudo que sabemos sobre Marketing Digital", John Martin (Consultor de SEO na SEO Martin) revela como usar a inteligência artificial para criar ações e campanhas de marketing.`,
     assets: [
       {
-        type: "spreadsheet",
-        url: "https://via.placeholder.com/360x290",
+        name: "Spreadsheet.xls",
+        url: "./download/Spreadsheet.xls",
       },
       {
-        type: "document",
-        url: "https://via.placeholder.com/360x290",
+        name: "Document.doc",
+        url: "./download/Document.doc",
       },
       {
-        type: "presentation",
-        url: "https://via.placeholder.com/360x290",
+        name: "Presentation.ppt",
+        url: "./download/Presentation.ppt",
       },
       {
-        type: "folder",
-        url: "https://via.placeholder.com/360x290",
+        name: "Folder.zip",
+        url: "./download/Folder.zip",
       },
     ],
   },
@@ -194,20 +194,20 @@ export const cards = [
     description: `Neste corte do webinar "O Futuro do Marketing - 3 Tendências que vão Mudar (Quase) Tudo que sabemos sobre Marketing Digital", John Martin (Consultor de SEO na SEO Martin) responde à pergunta "O ChatGPT vai automatizar o trabalho do Copywriter?"`,
     assets: [
       {
-        type: "spreadsheet",
-        url: "https://via.placeholder.com/360x290",
+        name: "Spreadsheet.xls",
+        url: "./download/Spreadsheet.xls",
       },
       {
-        type: "document",
-        url: "https://via.placeholder.com/360x290",
+        name: "Document.doc",
+        url: "./download/Document.doc",
       },
       {
-        type: "presentation",
-        url: "https://via.placeholder.com/360x290",
+        name: "Presentation.ppt",
+        url: "./download/Presentation.ppt",
       },
       {
-        type: "folder",
-        url: "https://via.placeholder.com/360x290",
+        name: "Folder.zip",
+        url: "./download/Folder.zip",
       },
     ],
   },
@@ -220,20 +220,20 @@ export const cards = [
     description: `Neste corte do webinar "O Futuro do Marketing - 3 Tendências que vão Mudar (Quase) Tudo que sabemos sobre Marketing Digital", John Martin (Consultor de SEO na SEO Martin) explica como é a relação do Google com o conteúdo gerado pelo ChatGPT.`,
     assets: [
       {
-        type: "spreadsheet",
-        url: "https://via.placeholder.com/360x290",
+        name: "Spreadsheet.xls",
+        url: "./download/Spreadsheet.xls",
       },
       {
-        type: "document",
-        url: "https://via.placeholder.com/360x290",
+        name: "Document.doc",
+        url: "./download/Document.doc",
       },
       {
-        type: "presentation",
-        url: "https://via.placeholder.com/360x290",
+        name: "Presentation.ppt",
+        url: "./download/Presentation.ppt",
       },
       {
-        type: "folder",
-        url: "https://via.placeholder.com/360x290",
+        name: "Folder.zip",
+        url: "./download/Folder.zip",
       },
     ],
   },
