@@ -74,6 +74,7 @@ function Footer() {
                       href={link.href}
                       target="_blank"
                       rel="noreferrer"
+                      aria-label={link.title}
                     >
                       {handleIcon(link.title)}
                     </a>
