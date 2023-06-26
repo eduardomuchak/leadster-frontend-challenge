@@ -38,7 +38,10 @@ function HeroSection() {
   };
 
   return (
-    <section className="flex w-full bg-white px-5 py-6 md:py-12 lg:py-[90px]">
+    <section
+      className="flex w-full bg-white px-5 py-6 md:py-12 lg:py-[90px]"
+      data-cy="hero-section"
+    >
       <div className="mx-auto flex w-full max-w-[1200px] flex-col items-center justify-center">
         <div className="flex w-full flex-wrap items-center justify-between gap-5 pb-7">
           <div className="flex w-full flex-row flex-wrap items-center gap-3">
@@ -47,6 +50,7 @@ function HeroSection() {
                 key={category.id}
                 isActive={category.isActive}
                 onClick={() => handleCategoryChangeWithTabReset(category.name)}
+                data-cy="category-button"
               >
                 {category.name}
               </Button>
@@ -65,7 +69,10 @@ function HeroSection() {
               <VideoCardModal key={`${card.id}-${index}`} data={card} />
             ))
           ) : (
-            <div className="flex h-20 w-full items-center justify-center">
+            <div
+              className="flex h-20 w-full items-center justify-center"
+              data-cy="no-cards-message"
+            >
               <p className="text-lg font-bold text-gray-400">
                 Opa! Parece que não existem cards para a categoria selecionada.
               </p>

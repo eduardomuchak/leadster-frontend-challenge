@@ -16,6 +16,7 @@ function ModalTrigger({ data }: VideoCardModalProps) {
         exit={{ opacity: 0 }}
         onMouseEnter={() => setIsHovering(true)}
         onMouseLeave={() => setIsHovering(false)}
+        data-cy="card"
       >
         <div className="relative max-h-[202px] w-full max-w-[360px] rounded-t-2xl">
           {isHovering ? <ImageHover /> : null}
