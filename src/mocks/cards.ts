@@ -1,4 +1,21 @@
-export const cards = [
+import { AllCategoryNames } from "@/hooks/useCategories/categories";
+
+interface Asset {
+  name: string;
+  url: string;
+}
+
+interface Card {
+  id: number;
+  thumbnail: string;
+  video: string;
+  title: string;
+  description: string;
+  assets: Asset[];
+  category: AllCategoryNames;
+}
+
+export const cards: Card[] = [
   {
     id: 1,
     thumbnail:
@@ -24,6 +41,7 @@ export const cards = [
         url: "./download/Folder.zip",
       },
     ],
+    category: "Marketing Digital",
   },
   {
     id: 2,
@@ -51,6 +69,7 @@ export const cards = [
         url: "./download/Folder.zip",
       },
     ],
+    category: "Chatbot",
   },
   {
     id: 3,
@@ -78,6 +97,7 @@ export const cards = [
         url: "./download/Folder.zip",
       },
     ],
+    category: "Marketing Digital",
   },
   {
     id: 4,
@@ -105,6 +125,7 @@ export const cards = [
         url: "./download/Folder.zip",
       },
     ],
+    category: "Agências",
   },
   {
     id: 5,
@@ -131,6 +152,7 @@ export const cards = [
         url: "./download/Folder.zip",
       },
     ],
+    category: "Geração de Leads",
   },
   {
     id: 6,
@@ -157,6 +179,7 @@ export const cards = [
         url: "./download/Folder.zip",
       },
     ],
+    category: "Mídia Paga",
   },
   {
     id: 7,
@@ -184,6 +207,7 @@ export const cards = [
         url: "./download/Folder.zip",
       },
     ],
+    category: "Mídia Paga",
   },
   {
     id: 8,
@@ -210,6 +234,7 @@ export const cards = [
         url: "./download/Folder.zip",
       },
     ],
+    category: "Marketing Digital",
   },
   {
     id: 9,
@@ -236,6 +261,7 @@ export const cards = [
         url: "./download/Folder.zip",
       },
     ],
+    category: "Marketing Digital",
   },
   {
     id: 10,
@@ -262,6 +288,7 @@ export const cards = [
         url: "./download/Folder.zip",
       },
     ],
+    category: "Chatbot",
   },
   {
     id: 11,
@@ -288,6 +315,7 @@ export const cards = [
         url: "./download/Folder.zip",
       },
     ],
+    category: "Agências",
   },
   {
     id: 12,
@@ -315,6 +343,7 @@ export const cards = [
         url: "./download/Folder.zip",
       },
     ],
+    category: "Chatbot",
   },
   {
     id: 13,
@@ -341,6 +370,7 @@ export const cards = [
         url: "./download/Folder.zip",
       },
     ],
+    category: "Agências",
   },
   {
     id: 14,
@@ -367,6 +397,7 @@ export const cards = [
         url: "./download/Folder.zip",
       },
     ],
+    category: "Mídia Paga",
   },
   {
     id: 15,
@@ -393,6 +424,7 @@ export const cards = [
         url: "./download/Folder.zip",
       },
     ],
+    category: "Geração de Leads",
   },
   {
     id: 16,
@@ -419,6 +451,7 @@ export const cards = [
         url: "./download/Folder.zip",
       },
     ],
+    category: "Geração de Leads",
   },
   {
     id: 17,
@@ -445,6 +478,7 @@ export const cards = [
         url: "./download/Folder.zip",
       },
     ],
+    category: "Chatbot",
   },
   {
     id: 18,
@@ -471,6 +505,7 @@ export const cards = [
         url: "./download/Folder.zip",
       },
     ],
+    category: "Marketing Digital",
   },
   {
     id: 19,
@@ -497,6 +532,7 @@ export const cards = [
         url: "./download/Folder.zip",
       },
     ],
+    category: "Agências",
   },
   {
     id: 20,
@@ -524,6 +560,7 @@ export const cards = [
         url: "./download/Folder.zip",
       },
     ],
+    category: "Mídia Paga",
   },
   {
     id: 1,
@@ -550,6 +587,7 @@ export const cards = [
         url: "./download/Folder.zip",
       },
     ],
+    category: "Geração de Leads",
   },
   {
     id: 2,
@@ -577,6 +615,7 @@ export const cards = [
         url: "./download/Folder.zip",
       },
     ],
+    category: "Chatbot",
   },
   {
     id: 3,
@@ -604,6 +643,7 @@ export const cards = [
         url: "./download/Folder.zip",
       },
     ],
+    category: "Marketing Digital",
   },
   {
     id: 4,
@@ -631,6 +671,7 @@ export const cards = [
         url: "./download/Folder.zip",
       },
     ],
+    category: "Agências",
   },
   {
     id: 5,
@@ -657,6 +698,7 @@ export const cards = [
         url: "./download/Folder.zip",
       },
     ],
+    category: "Marketing Digital",
   },
   {
     id: 6,
@@ -683,6 +725,7 @@ export const cards = [
         url: "./download/Folder.zip",
       },
     ],
+    category: "Geração de Leads",
   },
   {
     id: 7,
@@ -710,6 +753,7 @@ export const cards = [
         url: "./download/Folder.zip",
       },
     ],
+    category: "Chatbot",
   },
   {
     id: 8,
@@ -736,6 +780,7 @@ export const cards = [
         url: "./download/Folder.zip",
       },
     ],
+    category: "Geração de Leads",
   },
   {
     id: 9,
@@ -762,6 +807,7 @@ export const cards = [
         url: "./download/Folder.zip",
       },
     ],
+    category: "Mídia Paga",
   },
   {
     id: 10,
@@ -788,5 +834,6 @@ export const cards = [
         url: "./download/Folder.zip",
       },
     ],
+    category: "Geração de Leads",
   },
 ];
