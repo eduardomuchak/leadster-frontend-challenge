@@ -179,7 +179,7 @@ export const cards: Card[] = [
         url: "./download/Folder.zip",
       },
     ],
-    category: "Mídia Paga",
+    category: "Agências",
   },
   {
     id: 7,
@@ -207,7 +207,7 @@ export const cards: Card[] = [
         url: "./download/Folder.zip",
       },
     ],
-    category: "Mídia Paga",
+    category: "Marketing Digital",
   },
   {
     id: 8,
@@ -397,7 +397,7 @@ export const cards: Card[] = [
         url: "./download/Folder.zip",
       },
     ],
-    category: "Mídia Paga",
+    category: "Marketing Digital",
   },
   {
     id: 15,
@@ -560,7 +560,7 @@ export const cards: Card[] = [
         url: "./download/Folder.zip",
       },
     ],
-    category: "Mídia Paga",
+    category: "Marketing Digital",
   },
   {
     id: 1,
@@ -807,7 +807,7 @@ export const cards: Card[] = [
         url: "./download/Folder.zip",
       },
     ],
-    category: "Mídia Paga",
+    category: "Marketing Digital",
   },
   {
     id: 10,

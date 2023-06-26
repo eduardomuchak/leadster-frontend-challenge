@@ -1,6 +1,7 @@
 "use client";
 
 import { useCategories } from "@/hooks/useCategories";
+import { AllCategoryNames } from "@/hooks/useCategories/categories";
 import { cards } from "@/mocks/cards";
 import { options } from "@/mocks/selectOptions";
 import { useState } from "react";
@@ -12,12 +13,8 @@ import Select from "../ui/Select";
 
 function HeroSection() {
   const [currentTab, setCurrentTab] = useState(0);
-  const {
-    allCategories,
-    currentCategory,
-    handleCategoryChange,
-    setCurrentCategory,
-  } = useCategories();
+  const { allCategories, currentCategory, handleCategoryChange } =
+    useCategories();
 
   const filteredCards = currentCategory
     ? cards.filter((card) => card.category === currentCategory)
@@ -29,11 +26,15 @@ function HeroSection() {
   const endIndex = startIndex + cardsPerPage;
   const currentCards = filteredCards.slice(startIndex, endIndex);
 
-  console.log("currentCards", currentCards);
-
   const handleTabChange = (tabIndex: number) => {
     setCurrentTab(tabIndex);
-    setCurrentCategory(null);
+  };
+
+  const handleCategoryChangeWithTabReset = (
+    clickedCategory: AllCategoryNames
+  ) => {
+    setCurrentTab(0);
+    handleCategoryChange(clickedCategory);
   };
 
   return (
@@ -45,7 +46,7 @@ function HeroSection() {
               <Button
                 key={category.id}
                 isActive={category.isActive}
-                onClick={() => handleCategoryChange(category.name)}
+                onClick={() => handleCategoryChangeWithTabReset(category.name)}
               >
                 {category.name}
               </Button>
@@ -59,16 +60,26 @@ function HeroSection() {
           </div>
         </div>
         <CardsContainer>
-          {currentCards.map((card, index) => (
-            <VideoCardModal key={`${card.id}-${index}`} data={card} />
-          ))}
+          {currentCards.length > 0 ? (
+            currentCards.map((card, index) => (
+              <VideoCardModal key={`${card.id}-${index}`} data={card} />
+            ))
+          ) : (
+            <div className="flex h-20 w-full items-center justify-center">
+              <p className="text-lg font-bold text-gray-400">
+                Opa! Parece que não existem cards para a categoria selecionada.
+              </p>
+            </div>
+          )}
         </CardsContainer>
 
-        <PaginateCards
-          pageCount={pageCount}
-          currentTab={currentTab}
-          handleTabChange={handleTabChange}
-        />
+        {currentCards.length > 0 ? (
+          <PaginateCards
+            pageCount={pageCount}
+            currentTab={currentTab}
+            handleTabChange={handleTabChange}
+          />
+        ) : null}
       </div>
     </section>
   );

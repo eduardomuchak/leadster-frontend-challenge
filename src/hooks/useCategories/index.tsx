@@ -32,6 +32,5 @@ export function useCategories() {
     allCategories,
     currentCategory,
     handleCategoryChange,
-    setCurrentCategory,
   };
 }
