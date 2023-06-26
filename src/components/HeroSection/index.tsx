@@ -50,6 +50,7 @@ function HeroSection() {
                 key={category.id}
                 isActive={category.isActive}
                 onClick={() => handleCategoryChangeWithTabReset(category.name)}
+                data-cy="category-button"
               >
                 {category.name}
               </Button>
@@ -68,7 +69,10 @@ function HeroSection() {
               <VideoCardModal key={`${card.id}-${index}`} data={card} />
             ))
           ) : (
-            <div className="flex h-20 w-full items-center justify-center">
+            <div
+              className="flex h-20 w-full items-center justify-center"
+              data-cy="no-cards-message"
+            >
               <p className="text-lg font-bold text-gray-400">
                 Opa! Parece que não existem cards para a categoria selecionada.
               </p>

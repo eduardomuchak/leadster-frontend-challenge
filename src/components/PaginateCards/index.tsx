@@ -25,6 +25,7 @@ function PaginateCards({
                 "border-2 border-primary-blue-300": index === currentTab,
               }
             )}
+            data-cy="page-tab"
           >
             <span
               className={clsx(
