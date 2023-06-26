@@ -6,7 +6,7 @@ import HeroSection from "@/components/HeroSection";
 
 export default function Home() {
   return (
-    <div className="flex flex-col">
+    <div className="flex w-full flex-col">
       <Header />
       <main className="flex min-h-screen w-full flex-col">
         <div className="flex w-full flex-col justify-center">

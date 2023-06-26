@@ -31,7 +31,7 @@ function CTASection() {
             <div className="h-[2px] w-full bg-gray-bd" />
           </div>
         </div>
-        <div className="mt-4 flex w-full flex-row flex-wrap">
+        <div className="mt-4 flex w-full max-w-2xl flex-row flex-wrap">
           <div className="flex flex-row flex-wrap justify-center gap-4">
             <button className="group h-14 w-fit rounded-full bg-primary-blue-300 px-4 text-black transition-colors hover:bg-primary-blue-400 lg:h-[70px]">
               <span className="flex w-fit items-center justify-center px-5 py-2 text-center text-sm font-bold leading-5 text-white transition-colors lg:text-base">
