@@ -118,9 +118,9 @@ function Footer() {
 
   return (
     <footer className="mx-auto flex w-full max-w-[1200px] flex-col items-center justify-center py-10">
-      <div className="mb-6 flex flex-col gap-1 md:mb-0">
+      <div className="mb-6 flex flex-col items-center justify-center gap-1 md:mb-0">
         <Image src={logo} alt="logo" width={270} height={57} />
-        <span className="text-zinc-600">
+        <span className="text-sm font-medium text-zinc-400 lg:text-base">
           Transformando visitantes em clientes.
         </span>
       </div>
@@ -132,7 +132,7 @@ function Footer() {
               className="w-full px-2 py-4 md:py-10"
             >
               <span className="font-semibold text-zinc-500">{item.title}</span>
-              <ul className="mt-10 flex flex-col gap-5">
+              <ul className="mt-2 flex flex-col gap-2 md:mt-10 md:gap-5">
                 {item.links.map((link, index) => (
                   <li key={`${index}-${link.title}`}>
                     <a
@@ -186,6 +186,27 @@ function Footer() {
             </div>
           )
         )}
+      </div>
+      <div className="grid w-full grid-cols-1 gap-4 px-10 md:gap-0 lg:grid-flow-row lg:grid-cols-2">
+        <div className="flex h-10 w-full items-center justify-center ">
+          <span className="text-center text-sm font-medium text-zinc-400">
+            Copyright © 2015 - 2022 Todos os direitos reservados |{" "}
+            <a
+              className="text-primary-blue-300 transition-all hover:text-primary-blue-400"
+              href="https://leadster.com.br"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Leadster
+            </a>
+          </span>
+        </div>
+        <div className="-order-1 flex h-10 w-full items-center justify-center lg:order-2">
+          <span className="text-center text-sm font-medium text-zinc-400">
+            Rua José Loureiro, 464 - Centro - Curitiba PR - CEP: 80010-000 |
+            Termos de uso
+          </span>
+        </div>
       </div>
     </footer>
   );
