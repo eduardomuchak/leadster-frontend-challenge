@@ -37,7 +37,7 @@ function Footer() {
     <footer className="mx-auto flex w-full max-w-[1200px] flex-col items-center justify-center py-10">
       <div className="mb-6 flex flex-col items-center justify-center gap-1 md:mb-0">
         <Image src={logo} alt="logo" width={270} height={57} />
-        <span className="text-sm font-medium text-zinc-400 lg:text-base">
+        <span className="text-sm font-medium text-zinc-500 lg:text-base">
           Transformando visitantes em clientes.
         </span>
       </div>
@@ -52,7 +52,7 @@ function Footer() {
                 {item.links.map((link, index) => (
                   <li key={`${index}-${link.title}`}>
                     <a
-                      className="text-sm font-medium text-zinc-400 hover:text-zinc-500 lg:text-base"
+                      className="text-sm font-medium text-zinc-500 hover:text-zinc-600 lg:text-base"
                       href={link.href}
                     >
                       {link.title}
@@ -85,7 +85,7 @@ function Footer() {
                   <span className="text-sm font-medium text-zinc-600 lg:text-base">
                     E-mail:
                   </span>
-                  <span className="text-sm font-medium text-zinc-400 lg:text-base">
+                  <span className="text-sm font-medium text-zinc-500 lg:text-base">
                     {item.email}
                   </span>
                 </div>
@@ -93,7 +93,7 @@ function Footer() {
                   <span className="text-sm font-medium text-zinc-600 lg:text-base">
                     Telefone:
                   </span>
-                  <span className="text-sm font-medium text-zinc-400 lg:text-base">
+                  <span className="text-sm font-medium text-zinc-500 lg:text-base">
                     {item.phone}
                   </span>
                 </div>
@@ -104,7 +104,7 @@ function Footer() {
       </div>
       <div className="grid w-full grid-cols-1 gap-4 px-10 md:gap-0 lg:grid-flow-row lg:grid-cols-2">
         <div className="flex h-10 w-full items-center justify-center ">
-          <span className="text-center text-sm font-medium text-zinc-400">
+          <span className="text-center text-sm font-medium text-zinc-500">
             Copyright © 2015 - 2022 Todos os direitos reservados |{" "}
             <a
               className="text-primary-blue-300 transition-all hover:text-primary-blue-400"
@@ -117,7 +117,7 @@ function Footer() {
           </span>
         </div>
         <div className="-order-1 flex h-10 w-full items-center justify-center lg:order-2">
-          <span className="text-center text-sm font-medium text-zinc-400">
+          <span className="text-center text-sm font-medium text-zinc-500">
             Rua José Loureiro, 464 - Centro - Curitiba PR - CEP: 80010-000 |
             Termos de uso
           </span>
