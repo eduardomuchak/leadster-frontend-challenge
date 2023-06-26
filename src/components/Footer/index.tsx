@@ -2,6 +2,7 @@ import logo from "@/assets/brand/logo.png";
 import { Facebook, Instagram, LinkedinIcon } from "lucide-react";
 import Image from "next/image";
 import colors from "tailwindcss/colors";
+import GridItemContainer from "./GridItemContainer";
 import { websiteRoadMap } from "./WebsiteRoadMap";
 
 function Footer() {
@@ -43,11 +44,10 @@ function Footer() {
       <div className="grid w-full grid-flow-row grid-cols-1 px-10 md:grid-cols-4">
         {websiteRoadMap.map((item, index) =>
           item.title !== "Siga a Leadster" ? (
-            <div
+            <GridItemContainer
+              title={item.title}
               key={`${index}-${item.title}`}
-              className="w-full px-2 py-4 md:py-10"
             >
-              <span className="font-semibold text-zinc-500">{item.title}</span>
               <ul className="mt-2 flex flex-col gap-2 md:mt-10 md:gap-5">
                 {item.links.map((link, index) => (
                   <li key={`${index}-${link.title}`}>
@@ -60,13 +60,12 @@ function Footer() {
                   </li>
                 ))}
               </ul>
-            </div>
+            </GridItemContainer>
           ) : (
-            <div
+            <GridItemContainer
+              title={item.title}
               key={`${index}-${item.title}`}
-              className="w-full px-2 py-4 md:py-10"
             >
-              <span className="font-semibold text-zinc-500">{item.title}</span>
               <ul className="mt-4 flex flex-row flex-wrap gap-2 lg:gap-5">
                 {item.links.map((link, index) => (
                   <li key={`${index}-${link.title}`}>
@@ -99,7 +98,7 @@ function Footer() {
                   </span>
                 </div>
               </div>
-            </div>
+            </GridItemContainer>
           )
         )}
       </div>
