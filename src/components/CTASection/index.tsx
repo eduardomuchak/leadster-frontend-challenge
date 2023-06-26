@@ -6,7 +6,10 @@ import Image from "next/image";
 
 function CTASection() {
   return (
-    <section className="grid w-full grid-cols-1 bg-light-blue py-4 md:grid-cols-2 md:py-8 lg:py-16">
+    <section
+      className="grid w-full grid-cols-1 bg-light-blue py-4 md:grid-cols-2 md:py-8 lg:py-16"
+      data-cy="cta-section"
+    >
       <div className="flex items-center justify-end px-8">
         <Image
           src={CTAImage}

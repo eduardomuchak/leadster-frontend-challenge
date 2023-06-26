@@ -38,7 +38,10 @@ function HeroSection() {
   };
 
   return (
-    <section className="flex w-full bg-white px-5 py-6 md:py-12 lg:py-[90px]">
+    <section
+      className="flex w-full bg-white px-5 py-6 md:py-12 lg:py-[90px]"
+      data-cy="hero-section"
+    >
       <div className="mx-auto flex w-full max-w-[1200px] flex-col items-center justify-center">
         <div className="flex w-full flex-wrap items-center justify-between gap-5 pb-7">
           <div className="flex w-full flex-row flex-wrap items-center gap-3">

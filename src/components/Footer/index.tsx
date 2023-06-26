@@ -34,7 +34,10 @@ function Footer() {
   };
 
   return (
-    <footer className="mx-auto flex w-full max-w-[1200px] flex-col items-center justify-center py-10">
+    <footer
+      className="mx-auto flex w-full max-w-[1200px] flex-col items-center justify-center py-10"
+      data-cy="footer"
+    >
       <div className="mb-6 flex flex-col items-center justify-center gap-1 md:mb-0">
         <Image src={logo} alt="logo" width={270} height={57} />
         <span className="text-sm font-medium text-zinc-500 lg:text-base">
