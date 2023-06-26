@@ -1,5 +1,3 @@
-import Footer from "@/components/Footer";
-import Header from "@/components/Header";
 import { Plus_Jakarta_Sans as PlusJakartaSans } from "next/font/google";
 import "./globals.css";
 
@@ -22,13 +20,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pt-BR">
-      <Header />
       <body
         className={`${plusJakartaSans.className} flex w-full flex-1 bg-white text-black`}
       >
         {children}
       </body>
-      <Footer />
     </html>
   );
 }
