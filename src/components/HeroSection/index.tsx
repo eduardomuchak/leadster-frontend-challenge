@@ -27,11 +27,11 @@ function HeroSection() {
       <div className="mx-auto flex w-full max-w-[1200px] flex-col items-center justify-center">
         <div className="flex w-full flex-wrap items-center justify-between gap-5 pb-7">
           <div className="flex w-full flex-row flex-wrap items-center gap-3">
-            <Button>Agências</Button>
-            <Button>Chatbot</Button>
-            <Button>Marketing Digital</Button>
-            <Button>Geração de Leads</Button>
-            <Button>Mídia Paga</Button>
+            <Button isActive={true}>Agências</Button>
+            <Button isActive={false}>Chatbot</Button>
+            <Button isActive={false}>Marketing Digital</Button>
+            <Button isActive={false}>Geração de Leads</Button>
+            <Button isActive={false}>Mídia Paga</Button>
           </div>
           <div className="flex min-w-[312px] flex-row items-center gap-3 ">
             <label className="flex min-w-[100px] flex-1 text-sm font-semibold md:text-base">
